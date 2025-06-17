@@ -1,0 +1,17 @@
+
+[
+  {
+    "constant": false,
+    "inputs": [{"name": "_nftId", "type": "uint256"}],
+    "name": "rentNFT",
+    "outputs": [],
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "getVaultStatus",
+    "outputs": [{"name": "", "type": "string"}],
+    "type": "function"
+  }
+]
