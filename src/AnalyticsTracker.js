@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 
 function AnalyticsTracker() {
@@ -7,7 +6,11 @@ function AnalyticsTracker() {
     // Simulate sending page view
   }, []);
 
-  return null;
+  return (
+    <div style={{ fontSize: '0.9rem', color: 'gray', marginTop: '1em' }}>
+      📊 User analytics tracking enabled.
+    </div>
+  );
 }
 
 export default AnalyticsTracker;
