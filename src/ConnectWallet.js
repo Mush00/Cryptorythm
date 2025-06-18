@@ -1,15 +1,25 @@
-
-/**
- * 📘 USER GUIDE & DISCLAIMER
- * This component is part of the Cryptorythm platform.
- * ⚠️ Disclaimer: All trading involves risk. This platform does not provide financial advice.
- * Users are responsible for their own assets and actions taken through smart contracts or bots.
- */
-
-// ConnectWallet component allows user to link MetaMask
+import React from 'react';
 
 function ConnectWallet() {
-  return <div>ConnectWallet Component</div>;
+  const handleConnect = () => {
+    alert('🦊 Connecting to wallet...');
+  };
+
+  return (
+    <div style={{ marginTop: '1rem' }}>
+      <button onClick={handleConnect} style={{
+        padding: '10px 20px',
+        fontSize: '16px',
+        backgroundColor: '#4CAF50',
+        color: 'white',
+        border: 'none',
+        borderRadius: '5px',
+        cursor: 'pointer'
+      }}>
+        Connect Wallet
+      </button>
+    </div>
+  );
 }
 
 export default ConnectWallet;
