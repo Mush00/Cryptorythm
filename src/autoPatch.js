@@ -1,20 +1,19 @@
-
 export function runPatches() {
-  console.log("🔧 Running platform auto-patches...");
-  // Example: Fix missing NFT metadata field
+  console.log("🔧 Running platform auto-patch...");
+  // Example: Fix missing NFT metadata fields
 }
+
 import React from 'react';
-import { runPatches } from './autoPatch';
 
 function AutoPatchUI() {
   const handleRunPatch = () => {
     runPatches();
-    alert("🛠️ Auto-patch executed. Check console log.");
+    alert("🛠️ Auto-patch executed. Check console.");
   };
 
   return (
     <div style={{ marginTop: '2em' }}>
-      <h2>🧰 Maintenance Tools</h2>
+      <h2>🧱 Maintenance Tools</h2>
       <button
         onClick={handleRunPatch}
         style={{
