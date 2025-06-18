@@ -1,15 +1,46 @@
-
-/**
- * 📘 USER GUIDE & DISCLAIMER
- * This component is part of the Cryptorythm platform.
- * ⚠️ Disclaimer: All trading involves risk. This platform does not provide financial advice.
- * Users are responsible for their own assets and actions taken through smart contracts or bots.
- */
-
-// User alerts and system status notifications
+import React, { useState } from 'react';
 
 function Notifications() {
-  return <div>Notifications Component</div>;
+  const [notifications, setNotifications] = useState([
+    { message: '🔔 Market volatility is high today', type: 'warning' },
+    { message: '✅ Your NFT was minted successfully', type: 'success' },
+    { message: '⚙️ Scheduled maintenance at 2:00 AM UTC', type: 'info' },
+  ]);
+
+  const clearNotifications = () => setNotifications([]);
+
+  return (
+    <div style={{ marginTop: '2em' }}>
+      <h2>📢 Notifications</h2>
+
+      {notifications.length === 0 ? (
+        <p>No new notifications</p>
+      ) : (
+        <ul style={{ paddingLeft: '1em' }}>
+          {notifications.map((note, idx) => (
+            <li key={idx} style={{ marginBottom: '0.5em' }}>
+              {note.message}
+            </li>
+          ))}
+        </ul>
+      )}
+
+      <button
+        onClick={clearNotifications}
+        style={{
+          marginTop: '1em',
+          padding: '8px 16px',
+          backgroundColor: '#dc3545',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px',
+          cursor: 'pointer'
+        }}
+      >
+        Clear Notifications
+      </button>
+    </div>
+  );
 }
 
 export default Notifications;
