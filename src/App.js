@@ -1,68 +1,81 @@
-// App.js
-import React, { useEffect, useState } from 'react';
-
-// 🌗 Theme
+import React from 'react';
+import AdminDashboard from './AdminDashboard';
+import AdminPanel from './AdminPanel';
+import AdvancedStrategyManager from './AdvancedStrategyManager';
+import AnalyticsTracker from './AnalyticsTracker';
+import AutoMarketingAi from './AutoMarketingAi';
+import ChatBotSupport from './ChatBotSupport';
+import ConnectWallet from './ConnectWallet';
+import DAOvoting from './DAOvoting';
+import DEXStatusDashboard from './DEXStatusDashboard';
+import ETHPaymentForm from './ETHPaymentForm';
+import HomePage from './HomePage';
+import LegalNotice from './LegalNotice';
+import NFTDashboard from './NFTDashboard';
+import NFTMintForm from './NFTMintForm';
+import NFTViewer from './NFTViewer';
+import Notifications from './Notifications';
+import OnboardingWizard from './OnboardingWizard';
+import PerformanceAnalytics from './PerformanceAnalytics';
+import PerformanceDashboard from './PerformanceDashboard';
 import ThemeToggle from './ThemeToggle';
-
-// 🔐 Wallet Login
-import Web3Login from './Web3Login';
-
-// 🤖 Trading Bot UI Placeholder
 import TradingBotPanel from './TradingBotPanel';
-
-// 📡 DEX Readiness Checker
-import { checkDEXConnection } from './readinessCheck';
-
-// 🧠 Smart Contract Utility
-import { getVaultStatus } from './useSmartContract';
-
-// 📰 Marketing Broadcast Bot
-import './autoMarketingBot';
-
-// 🚦 Traffic Data
-import './trafficAnalyzer';
-
-// 🔬 Strategy Tester
-import './strategyBacktestOptimizer';
-
-// 🌍 Internationalization
-import { translations } from './i18n';
+import Web3Login from './Web3Login';
+import autoMarketingBot from './autoMarketingBot';
+import autoPatch from './autoPatch';
+import binanceConnector from './binanceConnector';
+import dexSwitcher from './dexSwitcher';
+import deployContractTemplate from './deployContractTemplate';
+import pancakeSwapBot from './pancakeSwapBot';
+import strategyBacktestOptimizer from './strategyBacktestOptimizer';
+import trafficAnalyzer from './trafficAnalyzer';
+import uniswapBot from './uniswapBot';
+import useSmartContract from './useSmartContract';
+import './cryptoPaymentHandler';
+import './dexSwitcherConfig';
+import './growthCampaignManager';
+import './i18n';
+import './Index';
+import './Server';
+import './test-api';
 
 function App() {
-  const [vaultStatus, setVaultStatus] = useState(null);
-  const [language, setLanguage] = useState('en');
-  const t = translations[language]; // 🌐 Language switch
-
-  useEffect(() => {
-    checkDEXConnection(); // ✅ DEX check on load
-  }, []);
-
-  const handleVaultCheck = async () => {
-    const status = await getVaultStatus();
-    setVaultStatus(status);
-  };
-
-  return (
-    <div style={{ padding: '2em' }}>
-      <h1>{t.welcome}</h1>
-
-      <ThemeToggle />
-      <Web3Login />
-
-      <button onClick={handleVaultCheck}>🔍 Check Vault Status</button>
-      {vaultStatus && <p>🧾 Vault Status: {vaultStatus}</p>}
-
-      <TradingBotPanel />
-
-      <div>
-        <label>🌐 Language:</label>
-        <select onChange={(e) => setLanguage(e.target.value)} value={language}>
-          <option value="en">English</option>
-          <option value="es">Español</option>
-        </select>
-      </div>
-    </div>
-  );
+    return (
+        <div style={ padding: '2em' }>
+        <AdminDashboard />
+        <AdminPanel />
+        <AdvancedStrategyManager />
+        <AnalyticsTracker />
+        <AutoMarketingAi />
+        <ChatBotSupport />
+        <ConnectWallet />
+        <DAOvoting />
+        <DEXStatusDashboard />
+        <ETHPaymentForm />
+        <HomePage />
+        <LegalNotice />
+        <NFTDashboard />
+        <NFTMintForm />
+        <NFTViewer />
+        <Notifications />
+        <OnboardingWizard />
+        <PerformanceAnalytics />
+        <PerformanceDashboard />
+        <ThemeToggle />
+        <TradingBotPanel />
+        <Web3Login />
+        <autoMarketingBot />
+        <autoPatch />
+        <binanceConnector />
+        <dexSwitcher />
+        <deployContractTemplate />
+        <pancakeSwapBot />
+        <strategyBacktestOptimizer />
+        <trafficAnalyzer />
+        <uniswapBot />
+        <useSmartContract />
+        </div>
+    );
 }
 
 export default App;
