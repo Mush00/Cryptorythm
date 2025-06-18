@@ -1,11 +1,10 @@
 import React from 'react';
 
-// Import your components
+// ✅ Import your components
 import ConnectWallet from './ConnectWallet';
 import AdminPanel from './AdminPanel';
-import HomePage from './HomePage';
 import NFTDashboard from './NFTDashboard';
-// Add more as needed...
+import HomePage from './HomePage'; // Example extra panel
 
 function App() {
   return (
@@ -14,12 +13,11 @@ function App() {
       <p>Welcome to the full Cryptorythm frontend.</p>
       <hr />
 
+      {/* ✅ Show your components below */}
       <ConnectWallet />
       <AdminPanel />
       <HomePage />
       <NFTDashboard />
-      {/* Add more components below as needed */}
-
     </div>
   );
 }
