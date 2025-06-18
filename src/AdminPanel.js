@@ -1,15 +1,32 @@
-
-/**
- * 📘 USER GUIDE & DISCLAIMER
- * This component is part of the Cryptorythm platform.
- * ⚠️ Disclaimer: All trading involves risk. This platform does not provide financial advice.
- * Users are responsible for their own assets and actions taken through smart contracts or bots.
- */
-
-// Admin panel to control platform settings
+import React, { useState } from 'react';
 
 function AdminPanel() {
-  return <div>AdminPanel Component</div>;
+  const [settings, setSettings] = useState({
+    tradingEnabled: true,
+    maintenanceMode: false,
+  });
+
+  const toggleSetting = (key) => {
+    setSettings((prev) => ({
+      ...prev,
+      [key]: !prev[key],
+    }));
+  };
+
+  return (
+    <div style={{ marginTop: '2em', fontFamily: 'Arial' }}>
+      <h2>🧩 Admin Panel Settings</h2>
+      <p>Toggle platform-wide settings:</p>
+      <ul>
+        <li onClick={() => toggleSetting('tradingEnabled')}>
+          📈 Trading Enabled: <strong>{settings.tradingEnabled ? 'Yes' : 'No'}</strong>
+        </li>
+        <li onClick={() => toggleSetting('maintenanceMode')}>
+          🛠️ Maintenance Mode: <strong>{settings.maintenanceMode ? 'On' : 'Off'}</strong>
+        </li>
+      </ul>
+    </div>
+  );
 }
 
 export default AdminPanel;
