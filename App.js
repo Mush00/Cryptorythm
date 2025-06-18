@@ -34,7 +34,7 @@ import useSmartContract from './useSmartContract';
 
 function App() {
   return (
-    <div style={ padding: '2em' }>
+    <div style={{ padding: '2em' }}>
       <AdminDashboard />
       <AdminPanel />
       <AdvancedStrategyManager />
