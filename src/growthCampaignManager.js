@@ -1,16 +1,16 @@
 // growthCampaignManager.js
 
 /**
- * Generates a growth campaign object for an NFT.
- * @param {string} nftName - The name of the NFT.
- * @param {string} rarity - The rarity level.
- * @returns {object} campaign - Campaign metadata.
+ * Generates a growth campaign object for an NFT
+ * @param {string} nftName - The name of the NFT
+ * @param {string} rarity - The rarity level (e.g., "Rare", "Epic", "Legendary")
+ * @returns {object} campaign - Campaign metadata
  */
 function generateCampaign(nftName, rarity) {
   const campaign = {
     title: `🌟 ${nftName} Release`,
-    description: `${nftName} is a new ultra-rare ${rarity} NFT.`,
-    media: `/assets/nft/${nftName.replace(/\s+/g, '_').toLowerCase()}.png`,
+    description: `${nftName} is a new ultra-${rarity} NFT now available!`,
+    media: `/assets/nft/${nftName.replace(/\s+/g, '-').toLowerCase()}.png`,
     channels: ["Twitter", "Discord", "Newsletter"]
   };
 
@@ -18,4 +18,4 @@ function generateCampaign(nftName, rarity) {
   return campaign;
 }
 
-module.exports = { generateCampaign };
+export default generateCampaign;
