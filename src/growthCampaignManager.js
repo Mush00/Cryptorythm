@@ -1,7 +1,5 @@
 // growthCampaignManager.js
 
-const fs = require('fs');
-
 /**
  * Generates a growth campaign object for an NFT.
  * @param {string} nftName - The name of the NFT.
