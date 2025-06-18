@@ -6,7 +6,7 @@ import AnalyticsTracker from './AnalyticsTracker.js';
 import AutoMarketingAi from './AutoMarketingAi.js';
 import ChatBotSupport from './ChatBotSupport.js';
 import ConnectWallet from './ConnectWallet.js';
-import DAOvoting from './DAOvoting.js';
+import DAOVoting from './DAOVoting.js';
 import DEXStatusDashboard from './DEXStatusDashboard.js';
 import ETHPaymentForm from './ETHPaymentForm.js';
 import HomePage from './HomePage.js';
