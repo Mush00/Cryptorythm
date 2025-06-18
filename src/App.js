@@ -36,46 +36,45 @@ import './dexSwitcherConfig';
 import './growthCampaignManager';
 import './i18n';
 import './Index';
-import './Server';
 import './test-api';
 
 function App() {
-    return (
-        <div style={ padding: '2em' }>
-        <AdminDashboard />
-        <AdminPanel />
-        <AdvancedStrategyManager />
-        <AnalyticsTracker />
-        <AutoMarketingAi />
-        <ChatBotSupport />
-        <ConnectWallet />
-        <DAOvoting />
-        <DEXStatusDashboard />
-        <ETHPaymentForm />
-        <HomePage />
-        <LegalNotice />
-        <NFTDashboard />
-        <NFTMintForm />
-        <NFTViewer />
-        <Notifications />
-        <OnboardingWizard />
-        <PerformanceAnalytics />
-        <PerformanceDashboard />
-        <ThemeToggle />
-        <TradingBotPanel />
-        <Web3Login />
-        <autoMarketingBot />
-        <autoPatch />
-        <binanceConnector />
-        <dexSwitcher />
-        <deployContractTemplate />
-        <pancakeSwapBot />
-        <strategyBacktestOptimizer />
-        <trafficAnalyzer />
-        <uniswapBot />
-        <useSmartContract />
-        </div>
-    );
+  return (
+    <div style={ padding: '2em' }>
+      <AdminDashboard />
+      <AdminPanel />
+      <AdvancedStrategyManager />
+      <AnalyticsTracker />
+      <AutoMarketingAi />
+      <ChatBotSupport />
+      <ConnectWallet />
+      <DAOvoting />
+      <DEXStatusDashboard />
+      <ETHPaymentForm />
+      <HomePage />
+      <LegalNotice />
+      <NFTDashboard />
+      <NFTMintForm />
+      <NFTViewer />
+      <Notifications />
+      <OnboardingWizard />
+      <PerformanceAnalytics />
+      <PerformanceDashboard />
+      <ThemeToggle />
+      <TradingBotPanel />
+      <Web3Login />
+      <autoMarketingBot />
+      <autoPatch />
+      <binanceConnector />
+      <dexSwitcher />
+      <deployContractTemplate />
+      <pancakeSwapBot />
+      <strategyBacktestOptimizer />
+      <trafficAnalyzer />
+      <uniswapBot />
+      <useSmartContract />
+    </div>
+  );
 }
 
 export default App;
