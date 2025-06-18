@@ -42,7 +42,7 @@ function App() {
       <AutoMarketingAi />
       <ChatBotSupport />
       <ConnectWallet />
-      <DAOvoting />
+      <DAOVoting />
       <DEXStatusDashboard />
       <ETHPaymentForm />
       <HomePage />
