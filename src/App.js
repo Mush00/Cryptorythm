@@ -26,7 +26,6 @@ import autoMarketingBot from './autoMarketingBot.js';
 import autoPatch from './autoPatch.js';
 import binanceConnector from './binanceConnector.js';
 import dexSwitcher from './dexSwitcher.js';
-import deployContractTemplate from './deployContractTemplate.js';
 import pancakeSwapBot from './pancakeSwapBot.js';
 import strategyBacktestOptimizer from './strategyBacktestOptimizer.js';
 import trafficAnalyzer from './trafficAnalyzer.js';
