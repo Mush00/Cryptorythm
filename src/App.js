@@ -26,6 +26,7 @@ import autoMarketingBot from './autoMarketingBot.js';
 import autoPatch from './autoPatch.js';
 import binanceConnector from './binanceConnector.js';
 import dexSwitcher from './dexSwitcher.js';
+import deployContractTemplate from './deployContractTemplate.js';
 import pancakeSwapBot from './pancakeSwapBot.js';
 import strategyBacktestOptimizer from './strategyBacktestOptimizer.js';
 import trafficAnalyzer from './trafficAnalyzer.js';
@@ -34,39 +35,43 @@ import useSmartContract from './useSmartContract.js';
 
 function App() {
   return (
-    <div style={{ padding: '2em' }}>
-      <AdminDashboard />
-      <AdminPanel />
-      <AdvancedStrategyManager />
-      <AnalyticsTracker />
-      <AutoMarketingAi />
-      <ChatBotSupport />
-      <ConnectWallet />
-      <DAOVoting />
-      <DEXStatusDashboard />
-      <ETHPaymentForm />
-      <HomePage />
-      <LegalNotice />
-      <NFTDashboard />
-      <NFTMintForm />
-      <NFTViewer />
-      <Notifications />
-      <OnboardingWizard />
-      <PerformanceAnalytics />
-      <PerformanceDashboard />
-      <ThemeToggle />
-      <TradingBotPanel />
-      <Web3Login />
-      <autoMarketingBot />
-      <autoPatch />
-      <binanceConnector />
-      <dexSwitcher />
-      <deployContractTemplate />
-      <pancakeSwapBot />
-      <strategyBacktestOptimizer />
-      <trafficAnalyzer />
-      <uniswapBot />
-      <useSmartContract />
+    <div className="main-container">
+      <div className="admin-dashboard"><AdminDashboard /></div>
+      <div className="admin-settings"><AdminPanel /></div>
+      <div className="strategy-section"><AdvancedStrategyManager /></div>
+      <div className="analytics-box"><AnalyticsTracker /></div>
+      <div className="auto-marketing"><AutoMarketingAi /></div>
+      <div className="chat-support"><ChatBotSupport /></div>
+      <div className="wallet-section"><ConnectWallet /></div>
+      <div className="dao-voting"><DAOVoting /></div>
+      <div className="dex-status"><DEXStatusDashboard /></div>
+      <div className="eth-payment"><ETHPaymentForm /></div>
+      <div className="home-section"><HomePage /></div>
+      <div className="legal-info"><LegalNotice /></div>
+      <div className="nft-dashboard"><NFTDashboard /></div>
+      <div className="nft-mint"><NFTMintForm /></div>
+      <div className="nft-viewer"><NFTViewer /></div>
+      <div className="notifications"><Notifications /></div>
+      <div className="onboarding"><OnboardingWizard /></div>
+      <div className="performance-section">
+        <PerformanceAnalytics />
+        <PerformanceDashboard />
+      </div>
+      <div className="theme-toggle"><ThemeToggle /></div>
+      <div className="bot-controls"><TradingBotPanel /></div>
+      <div className="web3-login"><Web3Login /></div>
+      <div className="bots">
+        <autoMarketingBot />
+        <autoPatch />
+        <binanceConnector />
+        <dexSwitcher />
+        <deployContractTemplate />
+        <pancakeSwapBot />
+        <strategyBacktestOptimizer />
+        <trafficAnalyzer />
+        <uniswapBot />
+        <useSmartContract />
+      </div>
     </div>
   );
 }
