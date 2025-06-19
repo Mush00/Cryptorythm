@@ -1,28 +1,128 @@
-body {
+/* General layout */
+.main-container {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  background-color: #f9f9f9;
   font-family: Arial, sans-serif;
-  background-color: #f7f9fc;
-  margin: 0;
-  padding: 0;
-  color: #222;
 }
 
-h2 {
-  margin-bottom: 0.5em;
+/* Individual sections */
+.admin-dashboard,
+.admin-settings,
+.strategy-section,
+.analytics-box,
+.auto-marketing,
+.chat-support,
+.wallet-section,
+.dao-voting,
+.dex-status,
+.eth-payment,
+.home-section,
+.legal-info,
+.nft-dashboard,
+.nft-mint,
+.nft-viewer,
+.notifications,
+.onboarding,
+.performance-section,
+.theme-toggle,
+.bot-controls,
+.web3-login,
+.bots,
+.contract-tools {
+  padding: 1.5em;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 }
 
-button {
-  padding: 8px 16px;
-  border: none;
-  background-color: #007BFF;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
+/* Specific section styles */
+.admin-dashboard {
+  border-left: 6px solid #3498db;
 }
 
-button:hover {
-  background-color: #0056b3;
+.admin-settings {
+  border-left: 6px solid #2ecc71;
 }
 
-div {
-  margin-bottom: 1.5em;
+.strategy-section {
+  border-left: 6px solid #f1c40f;
+}
+
+.analytics-box {
+  border-left: 6px solid #9b59b6;
+}
+
+.auto-marketing {
+  border-left: 6px solid #e67e22;
+}
+
+.chat-support {
+  border-left: 6px solid #34495e;
+}
+
+.wallet-section {
+  border-left: 6px solid #1abc9c;
+}
+
+.dao-voting {
+  border-left: 6px solid #e74c3c;
+}
+
+.dex-status {
+  border-left: 6px solid #16a085;
+}
+
+.eth-payment {
+  border-left: 6px solid #8e44ad;
+}
+
+.home-section {
+  border-left: 6px solid #2980b9;
+}
+
+.legal-info {
+  border-left: 6px solid #c0392b;
+}
+
+.nft-dashboard,
+.nft-mint,
+.nft-viewer {
+  border-left: 6px solid #ff7f50;
+}
+
+.notifications {
+  border-left: 6px solid #7f8c8d;
+}
+
+.onboarding {
+  border-left: 6px solid #27ae60;
+}
+
+.performance-section {
+  border-left: 6px solid #95a5a6;
+}
+
+.theme-toggle {
+  border-left: 6px solid #d35400;
+}
+
+.bot-controls {
+  border-left: 6px solid #2c3e50;
+}
+
+.web3-login {
+  border-left: 6px solid #bdc3c7;
+}
+
+.bots {
+  border-left: 6px dashed #7f8c8d;
+  padding: 1em;
+}
+
+.contract-tools {
+  border-left: 6px dashed #34495e;
+  padding: 1em;
 }
